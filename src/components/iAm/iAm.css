@@ -1,0 +1,74 @@
+.header__iam {
+  min-height: 100vh;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header__iam--info {
+  max-width: 35rem;
+}
+
+.header__iam--info h1 {
+  font-size: 3rem;
+  color: var(--dark);
+  line-height: 2.7rem;
+  margin-bottom: 1.6rem;
+}
+
+.header__iam--info p {
+  font-size: 1.1rem;
+}
+
+.header__iam--info__svgs {
+  margin-top: 1.6rem;
+}
+
+.header__iam--info__svgs a:first-child svg {
+  margin-right: 10px;
+}
+.header__iam--info__svgs a svg {
+  transition: all 0.2s;
+}
+
+.header__iam--info__svgs a svg:hover {
+  color: #a1b3b0;
+}
+
+.header__iam--img img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .header__iam--info h1 {
+    font-size: 2.3rem;
+    line-height: 1.8rem;
+  }
+
+  .header__iam--img img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header__iam {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__iam--info h1 {
+    font-size: 2rem;
+    line-height: 1.9rem;
+  }
+
+  .header__iam--info p {
+    font-size: 0.9rem;
+  }
+}

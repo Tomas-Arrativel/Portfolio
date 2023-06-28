@@ -1,0 +1,114 @@
+.main__aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  min-height: 60vh;
+  gap: 20px;
+}
+
+/* All the text about me */
+
+.main__aboutme--info {
+  flex-basis: 50%;
+}
+
+.main__aboutme--info h2,
+.main__aboutme--techstack h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+
+.main__aboutme--info p {
+  color: #717779;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.main__aboutme--info span {
+  font-weight: 700;
+  color: #494c4c;
+}
+
+button.btn {
+  margin-top: 1rem;
+  width: 35%;
+  padding: 10px;
+  background-color: var(--dark);
+  color: var(--primary);
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+button.btn:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+/* techstack part */
+
+.main__aboutme--techstack {
+  flex-basis: 40%;
+}
+
+.main__aboutme--techstack__container {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .main__aboutme--info p {
+    font-size: 1rem;
+  }
+  .main__aboutme--techstack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__aboutme--techstack__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main__aboutme {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .main__aboutme--info h2,
+  .main__aboutme--techstack h2 {
+    font-size: 1.5rem;
+  }
+
+  .main__aboutme--info p {
+    font-size: 0.9rem;
+  }
+
+  button.btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  .main__aboutme--techstack__container {
+    grid-auto-flow: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .main__aboutme--techstack__container {
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

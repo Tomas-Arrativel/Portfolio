@@ -1,0 +1,82 @@
+.main__projects-container__project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.2s;
+  transition-delay: 0.1s;
+  box-shadow: 0px 5px 10px #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.main__projects-container__project:hover {
+  box-shadow: 0px 13px 15px #acacac;
+  transform: translateY(-10px);
+}
+
+.main__projects-container__project img {
+  width: 100%;
+}
+
+.main__projects-container__project-info {
+  padding: 20px;
+}
+
+.main__projects-container__project-info .btn2 {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--dark);
+  background-color: var(--primary);
+  color: var(--dark);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+
+.main__projects-container__project-info .btn2:hover {
+  background-color: var(--dark);
+  color: var(--primary);
+}
+
+.accounts-dropdown {
+  position: relative;
+}
+.accounts-dropdown button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--dark);
+  background-color: var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.accounts-dropdown button svg {
+  transition: all 0.5s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: var(--primary);
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+  width: 100%;
+}
+.dropdown-menu ul {
+  list-style: none;
+  text-align: center;
+}
+.dropdown-menu ul li p span {
+  margin-left: 10px;
+}
+
+.discover {
+  display: none;
+}
