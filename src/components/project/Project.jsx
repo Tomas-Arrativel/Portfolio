@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import './project.css';
 
-const Project = ({ img, title, text, technologies, link }) => {
+const Project = ({ img, title, text, technologies, link, srcLink }) => {
   const [dropdown, setDropdown] = useState('false');
 
   return (
@@ -10,7 +10,7 @@ const Project = ({ img, title, text, technologies, link }) => {
       <img src={img} alt={title} />
 
       <div className='main__projects-container__project-info'>
-        <h2>{title}</h2>
+        <h2 className='project-title'>{title}</h2>
         <p>{text}</p>
 
         {title === 'Fake Bank' ? (
@@ -57,14 +57,21 @@ const Project = ({ img, title, text, technologies, link }) => {
         )}
         <div className='main__projects-container__project-info__technologies'>
           <h3>Technologies: </h3>
-          {technologies.map((tech) => (
-            <p className='tech-style'>{tech}</p>
+          {technologies.map((tech, key) => (
+            <p className='tech-style' key={key}>
+              {tech}
+            </p>
           ))}
         </div>
 
-        <button className='btn2'>
-          <a href={link}>View project</a>
-        </button>
+        <div className='buttons'>
+          <a href={link} target='_blank'>
+            <button className='btn2'>View project</button>
+          </a>
+          <a href={srcLink} target='_blank'>
+            <button className='btn2'>Source Code</button>
+          </a>
+        </div>
       </div>
     </div>
   );

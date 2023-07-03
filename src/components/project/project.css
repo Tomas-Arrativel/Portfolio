@@ -23,16 +23,35 @@
   padding: 20px;
 }
 
-.main__projects-container__project-info .btn2 {
+.main__projects-container__project-info h2 {
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.main__projects-container__project-info p {
+  color: #7a7a7a;
+  font-size: 0.9rem;
+}
+
+.main__projects-container__project-info a .btn2 {
   padding: 10px;
-  width: 100%;
   border: 1px solid var(--dark);
   background-color: var(--primary);
   color: var(--dark);
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  width: 50%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   transition: all 0.2s;
+}
+.main__projects-container__project-info a:last-child .btn2 {
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
 }
 
 .main__projects-container__project-info .btn2:hover {
@@ -64,6 +83,7 @@
 
 .dropdown-menu {
   position: absolute;
+  font-size: 0.8rem;
   background-color: var(--primary);
   border: 1px solid var(--dark);
   border-radius: 5px;
@@ -73,10 +93,69 @@
   list-style: none;
   text-align: center;
 }
+
+.dropdown-menu ul li {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-menu ul li:last-child {
+  border-bottom: none;
+}
+
 .dropdown-menu ul li p span {
   margin-left: 10px;
 }
 
 .discover {
   display: none;
+}
+
+.main__projects-container__project-info__technologies {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.main__projects-container__project-info__technologies h3 {
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.main__projects-container__project-info__technologies p {
+  font-size: 0.9rem;
+  color: var(--primary);
+  border-radius: 5px;
+  background-color: var(--dark);
+  padding: 5px;
+}
+
+@media (max-width: 850px) {
+  .main__projects-container__project-info h2 {
+    font-size: 1.5rem;
+  }
+  .main__projects-container__project-info p {
+    font-size: 0.85rem;
+  }
+  .main__projects-container__project-info__technologies p {
+    font-size: 0.8rem;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main__projects-container__project-info h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .accounts-dropdown button {
+    padding: 5px;
+  }
+
+  .main__projects-container__project-info a .btn2 {
+    padding: 7px;
+    font-size: 0.8rem;
+  }
 }

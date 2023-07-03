@@ -1,0 +1,27 @@
+import React from 'react';
+import './forms.css';
+
+const Forms = ({ icon, text, name, link }) => {
+  return (
+    <div className='contact__forms-others__platform'>
+      <div className='contact__forms-others__platform-icon'>{icon}</div>
+      <div className='contact__forms-others__platform-info'>
+        <p className='text'>{text}</p>
+
+        {link ? (
+          <a
+            className='name'
+            href={link}
+            target={link === '#' ? '_self' : '_blank'}
+          >
+            {name}
+          </a>
+        ) : (
+          <p className='name'>{name}</p>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Forms;
