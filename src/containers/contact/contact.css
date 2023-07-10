@@ -1,115 +1,22 @@
 .contact__container {
-  min-height: 80vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: left;
 }
 
 .contact__forms {
+  min-height: 20vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-.contact__container h2 {
-  font-size: 2rem;
-  color: var(--dark);
-}
-
-.contact__container h3 {
-  font-size: 1.3rem;
-  color: #797878;
-  font-weight: 500;
-}
-
-.contact__forms-form {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.contact__forms-form input {
-  padding: 10px;
-  border: 1px solid var(--dark);
-}
-
-.contact__forms-form input:focus,
-.contact__forms-form textarea:focus {
-  outline: none;
-}
-
-.contact__forms-form input:first-of-type {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom: none;
-}
-
-.contact__forms-form textarea {
-  height: 200px;
-  padding: 10px;
-  border: 1px solid var(--dark);
-  border-top: none;
-  resize: none;
-  border-bottom: none;
-}
-
-.form-btn {
-  padding: 10px;
-  cursor: pointer;
-  background-color: var(--dark);
-  color: var(--primary);
-  font-size: 15px;
-  font-weight: 700;
-
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: all 0.2s;
-}
-.form-btn:hover {
-  background-color: #000;
-}
-
-.contact__forms-others {
-  display: flex;
   flex-wrap: wrap;
-  width: 55%;
-  justify-content: space-around;
+  gap: 50px;
 }
 
-@media (max-width: 1000px) {
-  .contact__forms-others {
-    width: 40%;
-  }
-  .contact__forms-form {
-    width: 55%;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .contact__forms {
-    flex-direction: column-reverse;
-  }
-  .contact__forms-others {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .contact__forms-form {
-    width: 100%;
-  }
-
-  .contact__container h2 {
-    font-size: 1.5rem;
-    color: var(--dark);
-  }
-
-  .contact__container h3 {
-    font-size: 1.1rem;
-    color: #797878;
-    font-weight: 500;
-  }
-
-  .form-btn {
-    font-size: 0.8rem;
+    flex-direction: column;
   }
 }
