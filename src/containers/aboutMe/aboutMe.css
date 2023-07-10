@@ -1,8 +1,8 @@
 .main__aboutme {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  min-height: 50vh;
+  align-items: center;
+  min-height: 80vh;
   gap: 20px;
 }
 
@@ -12,11 +12,15 @@
   flex-basis: 50%;
 }
 
-.main__aboutme--info h2,
-.main__aboutme--techstack h2 {
+.main__aboutme--info h2 {
   font-size: 2rem;
   color: var(--dark);
   margin-bottom: 1.5rem;
+}
+.main__aboutme--techstack h2 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
 }
 
 .main__aboutme--info p {
@@ -55,7 +59,8 @@ button.btn:hover {
 
 .main__aboutme--techstack__container {
   display: flex;
-  margin-top: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
   align-items: center;
 }
 
@@ -69,12 +74,6 @@ button.btn:hover {
     justify-content: center;
     align-items: center;
   }
-  .main__aboutme--techstack__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
 }
 
 @media (max-width: 650px) {
@@ -86,9 +85,11 @@ button.btn:hover {
     text-align: center;
   }
 
-  .main__aboutme--info h2,
-  .main__aboutme--techstack h2 {
+  .main__aboutme--info h2 {
     font-size: 1.5rem;
+  }
+  .main__aboutme--techstack h2 {
+    font-size: 1.1rem;
   }
 
   .main__aboutme--info p {
@@ -102,13 +103,7 @@ button.btn:hover {
   }
 
   .main__aboutme--techstack__container {
-    grid-auto-flow: column;
-  }
-}
-
-@media (max-width: 450px) {
-  .main__aboutme--techstack__container {
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
   }
 }

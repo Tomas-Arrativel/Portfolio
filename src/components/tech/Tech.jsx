@@ -12,13 +12,15 @@ const Tech = ({ name, img }) => {
   };
 
   return (
-    <div
-      className='main__aboutme--techstack__tech'
-      onMouseEnter={onEnter}
-      onMouseLeave={onLeave}
-    >
+    <div className='main__aboutme--techstack__tech'>
       <p className={isTargeted ? '' : 'hidden'}>{name}</p>
-      {img}
+      <div
+        className='main__aboutme--techstack__tech-icon'
+        onMouseEnter={onEnter}
+        onMouseLeave={onLeave}
+      >
+        {img}
+      </div>
     </div>
   );
 };
