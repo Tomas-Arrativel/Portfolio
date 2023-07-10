@@ -1,9 +1,21 @@
 .contact__container {
-  min-height: 40vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
+}
+
+.contact__container h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.contact__container h3 {
+  font-size: 1.2rem;
+  color: var(--dark);
+  opacity: 0.8;
 }
 
 .contact__forms {
@@ -18,5 +30,13 @@
 @media (max-width: 650px) {
   .contact__forms {
     flex-direction: column;
+  }
+
+  .contact__container h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact__container h3 {
+    font-size: 1rem;
   }
 }
