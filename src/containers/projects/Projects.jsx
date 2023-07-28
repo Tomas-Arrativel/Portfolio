@@ -18,7 +18,7 @@ const Projects = () => {
         <Project
           img='img/fakebank.PNG'
           title='Fake Bank'
-          text="In this one, you will find a page that wants you to put an user and a pin. When you put them (i'll provkeye you with the accounts), you will find that you can ask for loans, transfer money to other account and let you delete de account."
+          text="In this one, you will find a page that wants you to put an user and a pin. When you put them (i'll provide you with the accounts), you will find that you can ask for loans, transfer money to other account and let you delete de account."
           technologies={['HTML', 'CSS', 'Javascript']}
           link='https://tomas-arrativel.github.io/fake-bank/'
           srcLink='https://github.com/Tomas-Arrativel/fake-bank'
