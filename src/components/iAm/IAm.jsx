@@ -13,7 +13,7 @@ const IAm = () => {
         </p>
         <div className='header__iam--info__svgs'>
           <a
-            href='https://www.linkedin.com/in/tom%C3%A1s-arrativel-59281a240/'
+            href='https://www.linkedin.com/in/juan-tom%C3%A1s-arrativel-59281a240/'
             target='_blank'
           >
             <AiFillLinkedin size={30} />
