@@ -8,14 +8,6 @@ const Projects = () => {
       <h2 className='title'>Projects</h2>
       <div className='main__projects-container'>
         <Project
-          img='img/tindog.PNG'
-          title='TinDog'
-          text='This page is trying to simulate something like tinder but for dogs. here you can find animations, and some components from bootstrap. I copied this page from a course that i made some time ago.'
-          technologies={['HTML', 'CSS', 'Bootstrap']}
-          link='https://tindog-tomas.netlify.app/'
-          srcLink='https://github.com/Tomas-Arrativel/Web-development/tree/main/11.3%20TinDog%20Project'
-        />
-        <Project
           img='img/Simongame.PNG'
           title='Simon Game'
           text='This project is a challenge of a course that i made were they want you to do a game of memory called Simon game. Here you have to touch the corresponding button. To know which button you have to touch next, you will see and hear a button that you will have to memorize and add to the rest of the buttons that the game have been telling you.'
@@ -30,6 +22,14 @@ const Projects = () => {
           technologies={['HTML', 'CSS', 'Javascript']}
           link='https://tomas-arrativel.github.io/fake-bank/'
           srcLink='https://github.com/Tomas-Arrativel/fake-bank'
+        />
+        <Project
+          img='img/mxarg.PNG'
+          title='MX-Arg'
+          text='This is a page that simulates a rental webpage of tracks and bikes for motocross based in Argentina.'
+          technologies={['HTML', 'CSS', 'Javascript', 'ReactJs']}
+          link='https://mxarg.vercel.app/'
+          srcLink='https://github.com/Tomas-Arrativel/portfolio-pages/tree/main/MX-Arg'
         />
         <Project
           img='img/forkify-app.PNG'
