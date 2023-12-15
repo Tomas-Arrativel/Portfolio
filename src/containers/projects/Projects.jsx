@@ -16,20 +16,20 @@ const Projects = () => {
           srcLink='https://github.com/Tomas-Arrativel/Web-development/tree/main/Simon%20Game%20Challenge%20Starting%20Files'
         />
         <Project
-          img='img/fakebank.PNG'
-          title='Fake Bank'
-          text="In this one, you will find a page that wants you to put an user and a pin. When you put them (i'll provide you with the accounts), you will find that you can ask for loans, transfer money to other account and let you delete de account."
-          technologies={['HTML', 'CSS', 'Javascript']}
-          link='https://tomas-arrativel.github.io/fake-bank/'
-          srcLink='https://github.com/Tomas-Arrativel/fake-bank'
-        />
-        <Project
           img='img/mxarg.PNG'
           title='MX-Arg'
           text='This is a page that simulates a rental webpage of tracks and bikes for motocross based in Argentina.'
           technologies={['HTML', 'CSS', 'Javascript', 'ReactJs']}
           link='https://mxarg.vercel.app/'
           srcLink='https://github.com/Tomas-Arrativel/portfolio-pages/tree/main/MX-Arg'
+        />
+        <Project
+          img='img/paletteheaven.PNG'
+          title='Palette Heaven'
+          text="This is a personal project that I created for selling websites to house-painting companies. Here, you can explore various features, including a form that sends me an email with the user's input, animated dropdown menus, and much more."
+          technologies={['HTML', 'CSS', 'TypeScript', 'ReactJs']}
+          link='https://palette-heaven.vercel.app/'
+          srcLink='https://github.com/Tomas-Arrativel/PaletteHaven'
         />
         <Project
           img='img/forkify-app.PNG'
