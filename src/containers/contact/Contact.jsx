@@ -20,8 +20,8 @@ const Contact = () => {
             />
           }
           text='Instagram'
-          name='arrativel.tomi'
-          link='https://www.instagram.com/arrativel.tomi/'
+          name='arrativel.tomas'
+          link='https://www.instagram.com/arrativel.tomas/'
         />
         <Forms
           icon={
