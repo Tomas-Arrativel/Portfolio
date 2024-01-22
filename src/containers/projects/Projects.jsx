@@ -32,12 +32,12 @@ const Projects = () => {
           srcLink='https://github.com/Tomas-Arrativel/PaletteHaven'
         />
         <Project
-          img='img/forkify-app.PNG'
-          title='Forkify App'
-          text='In this project you will find a page that I made following a course of Jonas Schmedtmann. It includes an API that he made himself and I used it to make this page to search for recipes.'
-          technologies={['HTML', 'CSS', 'Javascript', 'API']}
-          link='https://forkify-tomas-arrativel.netlify.app/'
-          srcLink='https://github.com/Tomas-Arrativel/Forkify-App'
+          img='img/skycommerce.PNG'
+          title='SkyCommerce'
+          text='In this project you will find an ecommerce where you can add products to the cart, search products and more, I made this by using an api for the products and react-router-dom to navigate through the pages.'
+          technologies={['HTML', 'CSS', 'React', 'Typescript', 'API']}
+          link='https://sky-commerce.vercel.app/'
+          srcLink='https://github.com/Tomas-Arrativel/SkyCommerce'
         />
       </div>
     </div>
