@@ -43,7 +43,7 @@ const Projects = () => {
 					title="Ecommerce Fullstack"
 					text="This is my first full-stack project, an ecommerce platform where users can create an account, add products to their cart, filter by category, view orders, remove items from the cart, and more. I plan to deploy this project soon so it can be accessed from any device."
 					technologies={[
-						"Full-stack",
+						"Fullstack",
 						"React",
 						"Javascript",
 						"API",

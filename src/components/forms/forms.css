@@ -1,179 +1,179 @@
 .contact__forms-others__platform {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px 30px;
-  min-width: 330px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	padding: 10px 30px;
+	min-width: 330px;
 }
 
 .contact__forms-others__platform:first-of-type {
-  margin-left: 0;
+	margin-left: 0;
 }
 
 .contact__forms-others__platform:last-of-type {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .contact__forms-others__platform-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
 }
 
 .contact__forms-others__platform-icon {
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact__forms-others__platform-info p {
-  font-weight: 900;
-  font-size: 15px;
-  color: var(--dark);
+	font-weight: 900;
+	font-size: 15px;
+	color: var(--dark);
 }
 
-.name {
-  color: #919191;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s;
+.contact__forms-others__platform-info .name {
+	color: #919191;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s;
 }
-.name:hover {
-  color: #505750;
+.contact__forms-others__platform-info .name:hover {
+	color: #505750;
 }
 
 /* Hover effect */
 .relative-div {
-  position: relative;
-  transition: 0.5s;
+	position: relative;
+	transition: 0.5s;
 }
 
 .relative-div:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .relative-div span {
-  position: absolute;
-  display: block;
-  background-color: #00848d;
+	position: absolute;
+	display: block;
+	background-color: #00848d;
 }
 
 .relative-div span:nth-child(1) {
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 1.5px;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s;
 }
 .relative-div:hover span:nth-child(1) {
-  transform: scaleX(1);
-  transform-origin: right;
+	transform: scaleX(1);
+	transform-origin: right;
 }
 
 .relative-div span:nth-child(2) {
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 1.5px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s;
 }
 .relative-div:hover span:nth-child(2) {
-  transform: scaleX(1);
-  transform-origin: left;
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 .relative-div span:nth-child(3) {
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: transform 0.5s;
-  transition-delay: 0.4s;
+	left: 0;
+	top: 0;
+	width: 2px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+	transition-delay: 0.4s;
 }
 .relative-div:hover span:nth-child(3) {
-  transform: scaleY(1);
-  transform-origin: top;
+	transform: scaleY(1);
+	transform-origin: top;
 }
 
 .relative-div span:nth-child(4) {
-  right: 0;
-  top: 0;
-  width: 1.5px;
-  height: 100%;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: transform 0.5s;
-  transition-delay: 0.4s;
+	right: 0;
+	top: 0;
+	width: 1.5px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+	transition-delay: 0.4s;
 }
 .relative-div:hover span:nth-child(4) {
-  transform: scaleY(1);
-  transform-origin: top;
+	transform: scaleY(1);
+	transform-origin: top;
 }
 
 .relative-div span:nth-child(5) {
-  left: 0;
-  bottom: 0;
-  width: 50%;
-  height: 2px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s;
-  transition-delay: 0.8s;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s;
+	transition-delay: 0.8s;
 }
 .relative-div:hover span:nth-child(5) {
-  transform: scaleX(1);
-  transform-origin: left;
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 .relative-div span:nth-child(6) {
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  height: 2px;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s;
-  transition-delay: 0.8s;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s;
+	transition-delay: 0.8s;
 }
 .relative-div:hover span:nth-child(6) {
-  transform: scaleX(1);
-  transform-origin: right;
+	transform: scaleX(1);
+	transform-origin: right;
 }
 
 @media (max-width: 1310px) {
-  .contact__forms-others__platform {
-    padding: 10px 15px;
-    min-width: 100px;
-  }
+	.contact__forms-others__platform {
+		padding: 10px 15px;
+		min-width: 100px;
+	}
 }
 
 @media (max-width: 650px) {
-  .contact__forms-others__platform {
-    min-width: 75vw;
-  }
+	.contact__forms-others__platform {
+		min-width: 75vw;
+	}
 }
 
 @media (max-width: 450px) {
-  .contact__forms-others__platform-info p {
-    font-size: 0.9rem;
-  }
-  .name {
-    font-size: 0.8rem;
-  }
+	.contact__forms-others__platform-info p {
+		font-size: 0.9rem;
+	}
+	.name {
+		font-size: 0.8rem;
+	}
 }
 
 @media (max-width: 350px) {
-  .contact__forms-others__platform {
-    flex-direction: column;
-  }
+	.contact__forms-others__platform {
+		flex-direction: column;
+	}
 }
